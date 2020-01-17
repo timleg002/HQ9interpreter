@@ -16,9 +16,9 @@ class Main(private val Path: String) {
                 'H' -> output.add("Hello World")
                 'Q' -> for(i in 0 until arr.size) output.add(arr[i].toString())
                 '9' -> for(i in 99 downTo 1){
-                    if(i-1 == 0 || i==0){
+                    if(i-1 == 0 || i==0)
                         output.add("$i bottles of beer\nyou take one down, pass it around,\nno more bottles of beer on the wall.")
-                    } else
+                     else
                         output.add("$i bottles of beer\nyou take one down, pass it around,\n${i-1} bottles of beer on the wall.\n")
                 }
                 '+' -> acc++
