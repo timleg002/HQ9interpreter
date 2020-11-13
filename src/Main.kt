@@ -27,8 +27,8 @@ class Main(private val Path: String) {
         return output
     }
 
-    fun main(path: String = Path){
-        val arr = interpret(read(path))
+    fun main(args: Array<String>){
+        val arr = interpret(read(args[0]))
         for(i in 0 until arr.size) print(arr.get(i))
     }
 }
